@@ -9,6 +9,28 @@ return {
       local luasnip = require("luasnip")
       luasnip.filetype_extend("typescriptreact", { "html" })
 
+      -- Custom Snippets template
+      -- local snip = luasnip.snippet
+      -- local node = luasnip.snippet_node
+      -- local text = luasnip.text_node
+      -- local insert = luasnip.insert_node
+      -- local func = luasnip.function_node
+      -- local choice = luasnip.choice_node
+      -- local dynamicn = luasnip.dynamic_node
+      --
+      -- luasnip.add_snippets(nil, {
+      --   javascriptreact = {
+      --     snip({
+      --       trig = "jrc",
+      --       namr = "JS React Component",
+      --       dscr = "JavaScript React Component",
+      --     }, {
+      --       text({ "", "title: " }),
+      --       insert(0),
+      --     }),
+      --   },
+      -- })
+
       require("luasnip/loaders/from_vscode").lazy_load()
     end,
   },
